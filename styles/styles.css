@@ -1,6 +1,11 @@
+:root {
+    --primary-color : darkblue;
+    --my-padding: 10px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--my-padding);
 }
 
 nav a {
@@ -10,7 +15,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 img {
@@ -22,7 +27,7 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: var(--my-padding);
 }
 
 main {
