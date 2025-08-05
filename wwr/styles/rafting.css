@@ -165,18 +165,27 @@ h1 {
 .adventure{
     padding: 1rem;
     background-color: #C9A690;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.adventure span {
-    display: flex;
+.adventure h2{
+    grid-column: 1/ span 5;
+}
+.adventure figure {
+    display: grid;
     align-items: center;
     justify-content: space-between;
     /* width: 100%; */
     margin: 5px auto;
+
 }
 
-.adventure span img{
+.adventure figure img{
     width: 100px;
     height: 65px;
     object-fit: fill;
