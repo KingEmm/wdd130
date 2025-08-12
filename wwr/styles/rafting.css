@@ -1,10 +1,10 @@
 /* https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:ital,wght@0,800;1,800&display */
 
 :root{
-    --primary-color: #2B59C3;
+    --primary-color: ##C9A690;
     --secondary-color: #253C78;
     --accent1-color: #FFEECF;
-    --accent2-color: #C9A690;
+    --accent2-color: #030A16;
     --heading-font: "Nunito", sans-serif;
     --body-font: "Lato", sans-serif;
     --grey-background: rgba(59, 58, 58, 0.2);
