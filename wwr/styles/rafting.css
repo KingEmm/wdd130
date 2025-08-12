@@ -269,6 +269,7 @@ ul li a , iframe, ul div{
     justify-content: center;
     border: 2px solid var(--primary-color);
     overflow: hidden;
+    /* border:0; */
 }
 
 ul li a:hover, iframe:hover, ul li div:hover {
@@ -293,7 +294,7 @@ ul li a:hover, iframe:hover, ul li div:hover {
 .employees {
     display: grid;
     align-items: center;
-    justify-content: baseline;
+    justify-content: flex-start;
     grid-template-rows: calc(95% /3) calc(95% /3) calc(95% /3);  /*33% 33% 33% ;*/
     grid-gap: calc(5% /2);
     width: 100%;
@@ -303,7 +304,7 @@ ul li a:hover, iframe:hover, ul li div:hover {
 .employees figure{
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    justify-content: flex-start;
 }
 
 .employees figure figcaption{
@@ -348,7 +349,7 @@ span {
     margin: 5px auto;
     width: 90%;
     align-items: center;
-    justify-content: baseline;
+    justify-content: flex-start;
     display: flex;
 }
 
@@ -369,7 +370,7 @@ input[type='checkbox'] {
     border: 1px solid var(--secondary-color);
     cursor: pointer;
     border-radius: 1px;
-    appearance: revert-layer;
+    appearance: revert;
 }
 
 span input[type='radio']:checked, input[type='checkbox']:checked{
