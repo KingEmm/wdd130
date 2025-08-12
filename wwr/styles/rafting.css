@@ -7,6 +7,7 @@
     --accent2-color: #C9A690;
     --heading-font: "Nunito", sans-serif;
     --body-font: "Lato", sans-serif;
+    --grey-background: rgba(59, 58, 58, 0.2);
 }
 
 
@@ -24,6 +25,7 @@ header {
 body {
     font-family: var(--body-font);
     color: var(--secondary-color);
+    background: linear-gradient(var(--accent1-color), var(--accent2-color));
 }
 
 header, main, footer {
@@ -225,4 +227,197 @@ footer img {
     width: 25px;
     height: 25px;
 
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-gap: calc(8% / 3);
+    margin: .5rem auto;
+    width: 95%;
+}
+
+ul li {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li div {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+}
+
+ul li div img{
+    width: 20%;
+    margin: 0 auto;
+}
+
+ul li a , iframe, ul div{
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    overflow: hidden;
+}
+
+ul li a:hover, iframe:hover, ul li div:hover {
+    border: none;
+    width: 110%;
+    background-color: var(--grey-background);
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    width: 95%;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.employees {
+    display: grid;
+    align-items: center;
+    justify-content: baseline;
+    grid-template-rows: calc(95% /3) calc(95% /3) calc(95% /3);  /*33% 33% 33% ;*/
+    grid-gap: calc(5% /2);
+    width: 100%;
+    height: 100%;
+}
+
+.employees figure{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.employees figure figcaption{
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.employees img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    align-items: end;
+    /* justify-content: space-around; */
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--grey-background);
+}
+
+div{
+    display: grid;
+    margin: 5px auto;
+    width: 90%;
+}
+label{
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: var(--heading-font);
+}
+
+span {
+    margin: 5px auto;
+    width: 90%;
+    align-items: center;
+    justify-content: baseline;
+    display: flex;
+}
+
+span label{
+    font-size: .9rem;
+    padding-left: 7px;
+}
+
+span input[type='radio']{
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--secondary-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type='checkbox'] {
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    border-radius: 1px;
+    appearance: revert-layer;
+}
+
+span input[type='radio']:checked, input[type='checkbox']:checked{
+    border: 2px solid var(--secondary-color);
+    background: var(--secondary-color);
+    border-radius: 50%;
+}
+
+input[type='checkbox']:checked{
+    border: none;
+    border-radius: 2px;
+}
+
+input, textarea, button, select{
+    background-color: var(--accent1-color);
+    font-family: inherit;
+    appearance: none;
+    border: none;
+    padding: .4rem;
+}
+
+input[type='text'],input[type='email'], textarea{
+    font-size: 17px;
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    width: 100%;padding-left: .8rem;
+}
+
+button {
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 40%;
+    height: 2.5rem;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+textarea {
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+input[type='text']:focus, textarea:focus{
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
 }
