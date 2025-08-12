@@ -228,6 +228,15 @@ footer img {
     height: 25px;
 
 }
+.contactheading{
+    position: relative;
+    margin: 2px auto 10px auto;
+    align-items: center;
+    top: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    /* display: flex; */
+}
 
 ul {
     list-style: none;
