@@ -90,7 +90,7 @@ h1, h2{
 }
 
 nav, p, section,article {
-    margin: 16px;
+    margin: 0;
     padding: 8px;
 }
 
@@ -100,7 +100,6 @@ nav, p, section,article {
 
 .hero {
     position: relative;
-    background-color: gold;
 }
 
 .hero img {
@@ -117,6 +116,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: .7;
+    right: 0;
     /* background-color: var(--accent1-color); */
     color: #fff;
 }
@@ -127,14 +127,18 @@ h1 {
     background-color: var(--accent2-color);
     opacity: .85;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
     height: 100px;
+    width: 90%;
     /* transform: translate(-50%, -50%); */
     flex-direction: row-reverse;
     border-radius: 5px;
     color: #2e2e30;
     font-weight: 400;
+    left: 5%;
 }
 
 .hero article img{
@@ -209,7 +213,7 @@ footer {
     grid-template-columns: 70% 30%;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent2-color);
+    /* background-color: var(--accent2-color); */
 }
 
 footer p{
@@ -432,3 +436,55 @@ input[type='text']:focus, textarea:focus{
     border-radius: 5px;
     border: 1px solid var(--primary-color);
 }
+
+.emailsub{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.emailsub form button{
+    width: 60%;
+}
+
+.emailsub article {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+} 
+
+.emailsub article a {
+    text-decoration: none;
+    width: 30%;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFEECF;
+    border-radius: 5px;
+    font-weight: bold
+}
+
+.memories {
+    display: grid;
+    grid-template-columns: calc(97%/3) calc(97%/3) calc(97%/3);
+    grid-column-gap: calc(3% / 2);
+    grid-row-gap: 10px;
+    width: 90%;
+}
+
+.memories img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.memories .forth{
+    grid-column: 1/ span 2;
+}
+
+.memories .sixth{
+    grid-column: 1/ span 3;
+}
+
