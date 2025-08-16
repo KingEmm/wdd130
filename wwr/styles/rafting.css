@@ -1,13 +1,13 @@
 /* https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:ital,wght@0,800;1,800&display */
 
 :root{
-    --primary-color: ##C9A690;
+    --primary-color: #3a312b;
     --secondary-color: #253C78;
     --accent1-color: #FFEECF;
     --accent2-color: #030A16;
     --heading-font: "Nunito", sans-serif;
     --body-font: "Lato", sans-serif;
-    --grey-background: rgba(59, 58, 58, 0.2);
+    --grey-background: #d4d4d4f5;
 }
 
 
@@ -136,9 +136,13 @@ h1 {
     /* transform: translate(-50%, -50%); */
     flex-direction: row-reverse;
     border-radius: 5px;
-    color: #2e2e30;
+    color: var(--accent1-color);
     font-weight: 400;
     left: 5%;
+}
+
+.hero article h5 {
+    margin: 0 0 0 1rem;
 }
 
 .hero article img{
@@ -398,18 +402,19 @@ input[type='checkbox']:checked{
     border-radius: 2px;
 }
 
-input, textarea, button, select{
-    background-color: var(--accent1-color);
+input, textarea, select{
+    background-color: transparent;
     font-family: inherit;
     appearance: none;
     border: none;
     padding: .4rem;
+    border: 1.5px solid var(--accent2-color);
 }
 
 input[type='text'],input[type='email'], textarea{
     font-size: 17px;
     outline: none;
-    border: transparent;
+    /* border: transparent; */
     border-radius: 10px;
     width: 100%;padding-left: .8rem;
 }
@@ -424,6 +429,7 @@ button {
     color: var(--accent1-color);
     background-color: var(--secondary-color);
     text-align: center;
+    border: none;
 }
 
 textarea {
@@ -446,13 +452,13 @@ input[type='text']:focus, textarea:focus{
     width: 60%;
 }
 
-.emailsub article {
+.emailsub .article {
     display: grid;
     align-items: center;
     justify-content: flex-start;
 } 
 
-.emailsub article a {
+.emailsub .article a, .hero a {
     text-decoration: none;
     width: 30%;
     background-color: var(--secondary-color);
@@ -488,3 +494,70 @@ input[type='text']:focus, textarea:focus{
     grid-column: 1/ span 3;
 }
 
+.tripheading article{
+    display: grid;
+    background-color: transparent;
+    width: 50%;
+    text-align: left;
+    top: 20px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.tripheading article h1 {
+    position: relative;
+    width: auto;
+    background-color: transparent;
+    color: var(--accent2-color);
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.tripheading p{
+    padding: 0;
+    font-size: 15;
+}
+
+.tripheading img {
+    /* width: 100%;
+    margin: 0 auto;
+    position: absolute; */
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: calc(4%/3);
+    width: 100%;
+}
+
+.trips img{
+    width: 100%;
+}
+
+.trips table {
+    grid-column: 3/ span 2;
+    grid-row: -1/ span 2;
+    border: 2px solid var(--secondary-color);
+    /* order: -1; */
+    /* grid-area: 2/ 2 /span 2/span 2; */
+}
+
+tbody tr td, tbody tr th {
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    /* padding: 8px 10px; */
+}
+
+thead {
+    background-color: var(--grey-background);
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
